@@ -42,7 +42,7 @@ const getNfts= async()=>{
         method: 'GET',
        
       };
-    const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${process.env.API_KEY}/getNFTs/`;
+    const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${process.env.REACT_APP_API_KEY}/getNFTs/`;
 
 let nfts
 
@@ -136,7 +136,7 @@ const getNFTscollection=async(num)=>{
             method: 'GET',
            
           };
-        const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${process.env.API_KEY}/getNFTsForCollection`;
+        const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${process.env.REACT_APP_API_KEY}/getNFTsForCollection`;
 
         const fetchURL = `${baseURL}?contractAddress=${collection}&withMetadata=${"true"}&startToken=${startToken}`;
 
